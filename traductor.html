@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Account</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+ 
+    <style>
+      .container8{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .container8 > div{
+    width: 650px;
+    height: 250px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 15% 75% 10%;
+  }
+  
+  
+  
+  .container8 > div .header{
+    display: grid;
+    grid-template-columns: calc(45% - 10px) 10% calc(45% - 10px);
+    gap: 10px;
+  }
+  
+  .header select{
+    border: 0;
+    background: none;
+    outline: none;
+  }
+  
+  .iconButton{
+    text-align: center;
+    border: 2px;
+    background: none;
+    font-size: 15px;
+    padding: 3px;
+    cursor: pointer;
+  }
+  
+  .containerTextArea{
+    height: 20%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  
+  
+  textarea{
+    width: 100%;
+    height: 90%;
+    font-size: 30px;
+    outline: none;
+    resize: none;
+    background: none;
+    border-radius: 5px;
+  }
+  
+  .traducir{
+    color:white;
+    background: #0c0c0c;
+    cursor: pointer;
+    text-align: center;
+    height: 40px;
+    border-radius: 5px;
+  }
+    </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <img src="./fotos/logon.png" height="80px" width="150"></img>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav me-auto">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </header>
+  <main>
+    <div class="my-4">
+    <div class="titulo" id="traductor"> 
+      <hr>
+      <h3>  TRADUCTOR DE ITALIANO A ESPAÑOL</h3>
+      <hr>
+    </div>
+     <div class="container8">
+      <div>
+          <div class="header">
+              <select class="first"></select>
+              <button class="iconButton" id="change"><i class="fas fa-exchange-alt"></i></button>
+              <select class="second"></select>
+          </div>
+          <div class="containerTextArea">
+              <div>
+                  <textarea class="fromText" placeholder="Enter text"></textarea>
+                  <div>
+                      <button class="read iconButton"><i class="fas fa-volume-up"></i></button>
+                      <button class="listen iconButton"><i class="fas fa-microphone"></i></button>
+                  </div>
+              </div>
+              <div>
+                  <textarea class="toText" placeholder="Enter text"></textarea>
+                  <div>
+                      <button class="read iconButton"><i class="fas fa-volume-up"></i></button>
+                  </div>
+              </div>
+          </div>
+          <button class="traducir">Translate</button>
+      </div>
+    </div>
+  </div>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="./script.js" type="module"></script>
+</body>
+
+</html>
